@@ -3,6 +3,9 @@
 /node_modules
 /build
 
+#exclude mongo
+/mongo
+
 # Logs
 logs
 *.log
