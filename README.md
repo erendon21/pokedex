@@ -25,13 +25,24 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-## ⚙️ Project setup
+Deployment of an API that allows querying information about Pokémon, including name, number, abilities, and stats. The goal is to practice consuming external APIs, data handling, and cloud deployment through modern REST endpoints.
+
+Tech Stack:
+- NestJS
+- Node.js
+- TypeScript
+- MongoDB
+- Railway (Cloud Deployments)
+
+
+
+## 1 - ⚙️ Project setup
 
 ```bash
 $ npm install
 ```
 
-## 🛠️ Compile and run the project
+## 2 -🛠️ Compile and run the project
 
 ```bash
 # development
@@ -44,7 +55,7 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## 🧬 Run tests
+## 3 - 🧬 Run tests
 
 ```bash
 # unit tests
@@ -56,7 +67,7 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
-## 🐳 Run Database
+## 4 - 🐳 Run Database
 
 We use Mongo DB for this project
 
@@ -64,7 +75,13 @@ We use Mongo DB for this project
 $ docker-compose up -d
 ```
 
-## 🚀 Deployment
+## 5 - Rebuild database
+
+```bash
+http://localhost:3000/api/v2/seed
+```
+
+## 6 - 🚀 Deployment
 
 We use [Railway](https://railway.app/) for deployments.
 
@@ -72,13 +89,4 @@ To start the production project on Railway:
 
 ```bash
 npm run start:prod
-```
-
-
-## 🧰 Tech Stack
-
-```bash
-- 🐱 NestJS: Progressive Node.js framework for building efficient and scalable server-side applications
-- 🐳 MongoDB: – NoSQL database for flexible and scalable data storage
-- 🔡 TypeScript: – Strongly typed JavaScript for better tooling and maintainability
 ```
