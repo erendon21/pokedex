@@ -8,6 +8,14 @@ async function bootstrap() {
     new ValidationPipe({
       whitelist: true,
       forbidNonWhitelisted: true,
+      /**
+       * Transform DTO's, 
+       * for query params and transforms strings in query params into the number
+       */
+      transform: true,
+      transformOptions: {
+        enableImplicitConversion: true,
+      },
     }),
   );
 
